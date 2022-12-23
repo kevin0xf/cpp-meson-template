@@ -1,1 +1,1 @@
-CXX=clang++ meson compile -C build
+meson setup build
