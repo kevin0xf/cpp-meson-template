@@ -14,5 +14,6 @@ thread_dep = dependency('threads')
 
 executable('Vortex', sources,
     dependencies: [thread_dep],
+    include_directories: ['src/'],
     link_args: ['-lGL', '-lglfw', '-lGLEW', '-lvulkan', '-std=c++20']
 )
